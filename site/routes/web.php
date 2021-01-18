@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'HomeController@HomeIndex');
-//Route::post('/contactSend', 'HomeController@ContactSend');
+Route::post('/contactSend', 'HomeController@ContactSend');
 
 
 //Route::get('/Courses', 'CoursesController@CoursePage');
