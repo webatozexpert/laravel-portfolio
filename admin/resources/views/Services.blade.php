@@ -8,7 +8,7 @@
 <div class="row">
 <div class="col-md-12 p-3">
 
-<button id="addNewBtnId" class="btn my-3 btn-sm btn-danger">Add New </button>
+<button id="addNewBtnId" class="btn my-3 btn-sm btn-primary">Add New </button>
 
 <table id="serviceDataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
   <thead>
