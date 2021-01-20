@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\VisitorModel;
 use App\ServicesModel;
-//use App\CourseModel;
-//use App\ProjectsModel;
-//use App\ContactModel;
-//use App\ReviewModel;
+use App\CourseModel;
+use App\ProjectsModel;
+use App\ContactModel;
+use App\ReviewModel;
 
 class HomeController extends Controller
 {
@@ -18,15 +18,15 @@ class HomeController extends Controller
         $timeDate= date("Y-m-d h:i:sa");
         VisitorModel::insert(['ip_address'=>$UserIP,'visit_time'=>$timeDate]);
         $ServicesData= json_decode( ServicesModel::all());
-       // $CoursesData= json_decode(CourseModel::orderBy('id','desc')->limit(6)->get());
-       // $ProjectData=json_decode(ProjectsModel::orderBy('id','desc')->limit(10)->get());
-       // $ReviewData= json_decode( ReviewModel::all());
+        $CoursesData= json_decode(CourseModel::orderBy('id','desc')->limit(6)->get());
+        $ProjectData=json_decode(ProjectsModel::orderBy('id','desc')->limit(10)->get());
+        $ReviewData= json_decode( ReviewModel::all());
 
         return view('Home',[
             'ServicesData'=>$ServicesData,
-           // 'CoursesData'=>$CoursesData,
-           // 'ProjectData'=>$ProjectData,
-           // 'ReviewData'=>$ReviewData,
+            'CoursesData'=>$CoursesData,
+           'ProjectData'=>$ProjectData,
+            'ReviewData'=>$ReviewData,
         ]);
     }
 
