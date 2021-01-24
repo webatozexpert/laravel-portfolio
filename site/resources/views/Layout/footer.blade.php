@@ -4,15 +4,15 @@
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">অনুসরণ </h3>
                 <hr>
-                <p><a target="_blank" href="" class="footer-link"><i class="fab fa-facebook-f"></i> ফেছবুক </a></p>
-                <p><a target="_blank" href="" class="footer-link"><i class="fab fa-youtube"></i> ইউটিউব </a></p>
+                <p><a target="_blank" href="https://www.facebook.com/webatozexpert/" class="footer-link"><i class="fab fa-facebook-f"></i> ফেছবুক </a></p>
+                <p><a target="_blank" href="https://www.youtube.com/" class="footer-link"><i class="fab fa-youtube"></i> ইউটিউব </a></p>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">ঠিকানা</h3>
                 <hr>
-                <p class="footer-text"><i class="fas fa-map-marker-alt"></i> শেখেরটেক ৮ মোহাম্মদপুর, ঢাকা </p>
-                <p class="footer-text"><i class="fas fa-phone"></i> ০১৭৮৫৩৮৮৯১৯ </p>
-                <p class="footer-text"><i class="fas fa-envelope"></i> Rabbil@Yahoo.com</p>
+                <p class="footer-text"><i class="fas fa-map-marker-alt"></i> Khidropery Gabtoli Bogura  </p>
+                <p class="footer-text"><i class="fas fa-phone"></i> 01312-848150 </p>
+                <p class="footer-text"><i class="fas fa-envelope"></i> webatozexpert@gmail.com</p>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">তথ্য </h3>
@@ -31,5 +31,5 @@
     </div>
 </div>
 <div class="container-fluid bg-dark text-white m-0 text-center p-3">
-    <p class="rights-text  my-2 ">সর্বস্বত্ব রাব্বিল হাসান দ্বারা সংরক্ষিত; ২০১৯-২০২০ </p>
+    <p class="rights-text  my-2 "> সর্বস্বত্ব AverFresh দ্বারা সংরক্ষিত; 2020-2021 </p>
 </div>

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 Route::get('/', 'HomeController@HomeIndex');
 
 Route::get('/visitor', 'VisitorController@VisitorIndex');
@@ -23,11 +24,10 @@ Route::post('/ServiceAdd', 'ServiceController@ServiceAdd');
 // Admin Panel Courses manaement
 Route::get('/courses', 'CoursesController@CoursesIndex');
 Route::get('/getCoursesData', 'CoursesController@getCoursesData');
+Route::post('/CoursesAdd', 'CoursesController@CoursesAdd');
 Route::post('/CoursesDelete', 'CoursesController@CoursesDelete');
 Route::post('/CoursesDetails', 'CoursesController@getCoursesDetails');
 Route::post('/CoursesUpdate', 'CoursesController@CoursesUpdate');
-Route::post('/CoursesAdd', 'CoursesController@CoursesAdd');
-
 
 
 // Admin Panel Projects Management

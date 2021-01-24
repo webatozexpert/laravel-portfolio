@@ -69,7 +69,7 @@
 
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog "  role="document">
     <div class="modal-content">
     <div class="modal-header">
         <h5 class="modal-title">Update Service</h5>
@@ -128,11 +128,6 @@
 @endsection
 
 
-
-
-
-
-
 @section('script')
 <script type="text/javascript">
   getServicesData();
@@ -184,6 +179,7 @@ function getServicesData() {
 
                 })
 
+            // service Page datatable
                 $('#serviceDataTable').DataTable({"order":false});
                 $('.dataTables_length').addClass('bs-select');
                
@@ -351,7 +347,7 @@ $('#addNewBtnId').click(function(){
 
 
 
-// Services Edit Modal Save Btn
+// Services Add Modal Save Btn
 $('#serviceAddConfirmBtn').click(function() {
     var name = $('#serviceNameAddID').val();
     var des = $('#serviceDesAddID').val();

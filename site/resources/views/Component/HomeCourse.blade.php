@@ -1,23 +1,33 @@
-<div class="container section-marginTop text-center">
-    <h1 class="section-title">কোর্স সমূহ </h1>
-    <h1 class="section-subtitle">আইটি কোর্স, প্রজেক্ট ভিত্তিক সোর্স কোড সহ আরো যে সকল সার্ভিস আমরা প্রদান করি </h1>
-    <div class="row">
-
-
-        @foreach($CoursesData as $CoursesData)
-        <div class="col-md-4 thumbnail-container">
-            <img src="{{$CoursesData->course_img}}" alt="Avatar" class="thumbnail-image ">
-            <div class="thumbnail-middle">
-                <h1 class="thumbnail-title"> {{ $CoursesData->course_name}} </h1>
-                <h1 class="thumbnail-subtitle">{{ $CoursesData->course_des}}</h1>
-                <h1 class="thumbnail-subtitle">{{ $CoursesData->course_totalclass}} </h1>
-                <a target="_blank" href="{{$CoursesData->course_link}}" class="normal-btn btn">শুরু করুন</a>
-            </div>
+<div class="container-fluid jumbotron mt-5 ">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6  text-center">
+                <img class=" page-top-img fadeIn" src="images/knowledge.svg">
+                <h1 class="page-top-title mt-3">- অনলাইন কোর্স সমূহ -</h1>
         </div>
-        @endforeach
-
-
-
-
     </div>
 </div>
+
+<div class="container mt-5">
+    <div class="row">
+
+        @foreach($CoursesData as $CoursesData)
+        <div class="col-md-4 p-1 text-center">
+            <div class="card">
+                <div class="text-center">
+                    <img class="w-100" src="{{$CoursesData->course_img}}" alt="Card image cap">
+                    <h5 class="service-card-title mt-4">{{$CoursesData->course_name}}</h5>
+                    <h6 class="service-card-subTitle p-0 ">{{$CoursesData->course_des}} </h6>
+                    <h6 class="service-card-subTitle p-0 ">{{$CoursesData->course_totalenroll}} | {{$CoursesData->course_totalclass}}  </h6>
+                     <h6 class="service-card-subTitle p-0 ">{{$CoursesData->course_fee}}  </h6>
+                    <a target="_blank" herf="{{$CoursesData->course_link}}" class="normal-btn-outline mt-2 mb-4 btn">শুরু করুন </a>
+                </div>
+            </div>
+        </div>
+
+        @endforeach
+       
+
+      
+    </div>
+</div>
+

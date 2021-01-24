@@ -17,11 +17,7 @@ function getServiceData(){
 	return $result;
 }
 
-function getServiceDetails(Request $req){
-  $id= $req->input('id');
-  $result=json_encode(ServicesModel::where('id','=',$id)->get());
-  return $result;
-}
+
 
 
 
@@ -36,6 +32,14 @@ function ServiceDelete(Request $req){
      	return 0;
      }
 }
+
+function getServiceDetails(Request $req){
+  $id= $req->input('id');
+  $result=json_encode(ServicesModel::where('id','=',$id)->get());
+  return $result;
+}
+
+
 
 function ServiceUpdate(Request $req){
      $id= $req->input('id');
