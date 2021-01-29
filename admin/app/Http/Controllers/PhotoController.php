@@ -27,13 +27,13 @@ class PhotoController extends Controller
   }
 
     function PhotoJSON(Request $request){
-        return PhotoModel::take(3)->get();
+        return PhotoModel::take(4)->get();
     }
 
 
     function PhotoJSONByID(Request $request){
         $FirstID=$request->id;
-        $LastID=$FirstID+3;
+        $LastID=$FirstID+4;
         return PhotoModel::where('id','>=',$FirstID)->where('id','<',$LastID)->get();
     }
 
