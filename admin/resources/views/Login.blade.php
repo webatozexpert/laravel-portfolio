@@ -57,6 +57,7 @@
         }).then(function (response) {
            if(response.status==200 && response.data==1){
                window.location.href="/";
+               toastr.success('Login Successfully');
            }
            else{
                toastr.error('Login Fail ! Try Again');
