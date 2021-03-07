@@ -9,6 +9,7 @@
 					</ul>
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item"><a href="{{url('/Logout')}}" class="btn btn-sm btn-danger">Logout</a></li>
+                        
                     </ul>
                 </div>
             </nav>

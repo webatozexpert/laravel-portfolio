@@ -18,6 +18,7 @@ padding: 1% 1% 1% 1% ;
 	height:auto;
 }
 
+<<<<<<< Updated upstream
 .form-control:focus {
   border-color: #FF0000;
   box-shadow: none;
@@ -51,4 +52,10 @@ padding: 1% 1% 1% 1% ;
     width: 100%;
     object-fit: cover;
     height: 200px;
+=======
+.imgPreview{
+	width: 90%;
+	
+	height: 320px;
+>>>>>>> Stashed changes
 }
